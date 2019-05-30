@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <title>Image uploader&editor</title>
+    
+    <!--Bootstrap-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+</head>
+
+<body>
+
+<div class ="container">
+    <div class="d-flex p-3" style="background-color:  whitesmoke; margin-top: 100px;">
+<div class="upload-container ">
+    <div class="upload-header">
+    </div>
+    <div class="upload-content" style="display: flex; justify-content: center">
+        <div class="single-upload" style="margin-top: 5px">
+            <h3>Upload Image</h3>
+
+            <!--
+            <form id="singleUploadForm" name="singleUploadForm" method ="POST" enctype="multipart/form-data">
+                <input id="singleFileUploadInput" type="file" name="file" class="file-input" required />
+                <button type="submit" class="primary submit-btn">Submit</button>
+            </form>
+            -->
+
+            <form id="singleUploadForm" name="singleUploadForm" method ="POST" enctype="multipart/form-data" style="margin-top: 15px">
+            <div class="input-group">
+                <div class="input-group-prepend">
+                    <span class="input-group-text" id="inputGroupFileAddon01">Upload</span>
+                </div>
+                <div class="custom-file">
+                    <input id="singleFileUploadInput" type="file" name="file" class="file-input" required
+                           aria-describedby="inputGroupFileAddon01"/>
+                    <label class="custom-file-label" for="singleFileUploadInput">Choose file</label>
+                </div>
+            </div>
+                <button type="submit" class="btn btn-primary" style="margin-top: 15px; background-color: #E9ECEF; color: #495057; border-color: #ced4da">Submit</button>
+            </form>
+
+
+            <div class="upload-response"  style="margin-top:15px">
+                <div id="singleFileUploadError"></div>
+                <div id="singleFileUploadSuccess"></div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+</div>
+        <script src="/js/main.js" ></script>
+</body>
+</html>
